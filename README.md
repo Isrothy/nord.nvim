@@ -46,6 +46,8 @@ and [the official vscode theme](https://github.com/arcticicestudio/nord-visual-s
 - [Glance](https://github.com/dnlhc/glance.nvim)
 - [Markview](https://github.com/OXY2DEV/markview.nvim)
 - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
+- [Blink.cmp](https://github.com/saghen/blink.cmp)
+- [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 
 Your preferred plugin is missing ? Open an issue or, even better, open a pull
 request 😉.
@@ -139,10 +141,12 @@ require("nord").setup({
   },
 
   -- Override the default colors
+  ---@param colors Nord.Palette
   on_colors = function(colors) end,
 
   --- You can override specific highlights to use other groups or a hex color
   --- function will be called with all highlights and the colorScheme table
+  ---@param colors Nord.Palette
   on_highlights = function(highlights, colors) end,
 })
 ```
